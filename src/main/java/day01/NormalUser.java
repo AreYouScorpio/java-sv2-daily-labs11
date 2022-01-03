@@ -3,11 +3,11 @@ package day01;
 public class NormalUser implements User {
 
 private String email;
-private String passoword;
+private String password;
 
     public NormalUser(String email, String passowrd) {
         this.email = email;
-        this.passoword = passowrd;
+        this.password = passowrd;
     }
 
     @Override
@@ -17,6 +17,6 @@ private String passoword;
 
     @Override
     public String getPassword() {
-        return passoword;
+        return password;
     }
 }
