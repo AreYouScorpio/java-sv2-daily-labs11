@@ -1,13 +1,10 @@
 package day01;
 
 public interface User {
-    
-    String getUserEmail(){
 
-    }
+    String getEmail();
 
-    String getPassword(){
 
-    }
+    String getPassword();
 
 }
