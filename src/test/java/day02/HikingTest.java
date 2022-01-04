@@ -15,4 +15,17 @@ class HikingTest {
         assertEquals(18, result);
     }
 
+    @Test
+    void testGetFullElevationIncreasing() {
+        int result = new Hiking().getPlusElevation(List.of(10, 20, 25, 30, 31));
+        assertEquals(21, result);
+
+    }
+
+    @Test
+    void testGetFullElevationDecreasing() {
+        int result = new Hiking().getPlusElevation(List.of(31,30,20, 17, 15, 3));
+        assertEquals(0, result);
+    }
+
 }
