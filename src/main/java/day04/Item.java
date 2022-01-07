@@ -3,9 +3,9 @@ package day04;
 import java.time.LocalDate;
 
 public abstract class Item {
-    String name;
-    int price;
-    LocalDate expiryDate;
+    protected String name;
+    protected int price;
+    protected LocalDate expiryDate;
 
     public Item(String name, int price) {
         this.name = name;
