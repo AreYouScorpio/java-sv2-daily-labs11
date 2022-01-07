@@ -46,6 +46,14 @@ public class User {
         }
     }
 
+    private boolean hasEnoughMoney(Item item){
+        if(money>=item.getPrice()) {
+            money-=item.getPrice();
+            return true;
+        }
+        return false;
+    }
+
     private boolean hasEnoughMoneyForExtendedWarranty(Item item){
         if (money>= item.getPrice()*3) {
             money-=item.getPrice()*1.1;

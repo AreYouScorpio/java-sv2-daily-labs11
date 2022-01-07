@@ -4,9 +4,16 @@ import java.time.LocalDate;
 
 public class Product extends Item{
 
+    public Product(String name, int price) {
+        super(name, price);
+    }
 
     @Override
     public void setExpiryDate(LocalDate sellDate) {
-        sellDate==(sellDate.getMonth()+3);
+        expiryDate=sellDate.plusMonths(3);
+    }
+
+    public void extendExpiryDate() {
+        expiryDate=expiryDate.plusMonths(33);
     }
 }

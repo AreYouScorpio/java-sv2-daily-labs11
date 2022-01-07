@@ -10,7 +10,7 @@ public class WebSite {
     private List<Product> items = new ArrayList<>();
     private List<User> users = new ArrayList<>();
 
-    public void buyItem(String userNamem, String itemName){
+    public void buyItem(String userName, String itemName){
         User user = getUser(userName);
         Item item = getItem(itemName);
     }
