@@ -26,7 +26,7 @@ public class Lottery {
     public static void main(String[] args) {
         Lottery lottery = new Lottery();
 
-        System.out.println(lottery.startLottery(10,3));
+        System.out.println(lottery.startLottery(45,6));
     }
 
 }
